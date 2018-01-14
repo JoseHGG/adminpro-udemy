@@ -6,17 +6,17 @@ import { BreadcrumsComponent } from './breadcrums/breadcrums.component';
 import { NopagefoundComponent } from './nopagefound/nopagefound.component';
 
 @NgModule({
-  declarations: [
-    HeaderComponent,
-    SidebarComponent,
-    BreadcrumsComponent,
-    NopagefoundComponent
-  ],
-  exports: [
-    HeaderComponent,
-    SidebarComponent,
-    BreadcrumsComponent,
-    NopagefoundComponent
-  ]
+	declarations: [
+		HeaderComponent,
+		SidebarComponent,
+		BreadcrumsComponent,
+		NopagefoundComponent
+	],
+	exports: [
+		HeaderComponent,
+		SidebarComponent,
+		BreadcrumsComponent,
+		NopagefoundComponent
+	]	
 })
-export class ShareModule {}
+export class SharedModule {}
