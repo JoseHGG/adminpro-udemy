@@ -7,14 +7,16 @@ import {  APP_ROUTES } from './app.routes';
 // Modulos
 import { PagesModule } from './pages/pages.module';
 
-// Componentes
+// Temporal
+import { FormsModule } from '@angular/forms';
 
+// Servicios
+import { ServiceModule } from './services/service.module';
+
+// Componentes
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './login/register.component';
-
-// Temporal
-import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,11 +28,9 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     APP_ROUTES,
     PagesModule,
-    FormsModule
-  ],
+    FormsModule,
+    ServiceModule],
   providers: [],
-  bootstrap: [
-    AppComponent
-  ]
+  bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
